@@ -1,0 +1,8 @@
+---
+- name: Jenkins
+  hosts: jenkins
+  vars_files:
+  - group_vars/all/main.yml
+  roles: 
+  - jenkins
+  become: true
